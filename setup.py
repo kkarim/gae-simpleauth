@@ -3,19 +3,12 @@ import os
 import sys
 from distutils.core import setup
 
-from dev_appserver import fix_sys_path
-
-saved_path = list(sys.path)
-fix_sys_path() # wipes out sys.path
-sys.path.extend(saved_path) # put back our original paths
-
-import simpleauth
-
+import pdb; pdb.set_trace()
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name='simpleauth',
-      version=simpleauth.__version__,
+      version='0.1.4',
       author='Alex Vagin (http://alex.cloudware.it)',
       author_email='alex@cloudware.it',
       url='http://code.google.com/p/gae-simpleauth',
