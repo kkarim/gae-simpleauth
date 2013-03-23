@@ -3,7 +3,6 @@ import os
 import sys
 from distutils.core import setup
 
-import pdb; pdb.set_trace()
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
